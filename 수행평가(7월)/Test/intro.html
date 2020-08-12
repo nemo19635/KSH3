@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>수행평가</title>
+    <style>
+    .sw{color:blue;}
+    #smc{color:green;}
+    </style>
+    <script>
+    function ab(self){
+
+      var simple = document.querySelector('body');
+      if(document.querySelector('#change').value==='on'){
+        simple.style.backgroundColor='yellow';
+        simple.style.color='black';
+        document.querySelector('#change').value='off'
+      }else{
+        simple.style.backgroundColor='black';
+        simple.style.color='yellow';
+        document.querySelector('#change').value='on'
+      }
+
+    }
+    function ac(){
+
+    }
+    </script>
+  </head>
+  <body>
+    <h1>박예림의 프로필</h1>
+    <h3 style="background-color:black;color:white;">2학년 8반 6번</h3>
+    <h4><span class="sw">소프트웨어 1등</span>, <span id="smc">세명컴퓨터고등학교</span></h4>
+    <ol>
+      <li><a href="1.html">1</a></li>
+      <li><a href="2.html">2</a></li>
+      <li><a href="3.html">3</a></li>
+    </ol>
+    <p>4차 산업혁명을 이끌어가는 세명컴퓨터고등학교 게임소프트웨어과 학생 박예림입니다.</p>
+
+    <script>
+      var food={
+        "breakfast":"egg",
+        "lunch":"pizza",
+        "dinner":"chicken"
+      };
+    </script>
+    <script>
+      for( var key in food){
+        document.write(key+':'+food[key]+'<br>');
+      }
+    </script>
+    <script>
+      var month=["월요일","화요일","수요일","목요일","금요일","토요일","일요일"]
+    </script>
+
+    <script>
+      document.write('오늘은'+month[2]+'입니다.');
+
+    </script>
+
+    <input type="button"  value="pink" id="pink_white"
+    onclick="
+    document.querySelector('body').style.backgroundColor='pink';
+    document.querySelector('body').style.color='white';
+    ">
+    <input type="button"  value="powderblue" id="powderblue_white"
+    onclick="
+    document.querySelector('body').style.backgroundColor='powderblue';
+    document.querySelector('body').style.color='white';
+    ">
+    <input type="button" value="on" id="change"
+    onclick="
+    ab(this);
+    ">
+
+    <input type="button" value="amail" id="qiestion" onclick="alert('eny11@naver.com')">
+
+
+  </body>
+</html>
